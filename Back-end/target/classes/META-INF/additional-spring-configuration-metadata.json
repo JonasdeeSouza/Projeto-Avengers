@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll()'"
+  },
+  {
+    "name": ".and().csrf().disable()",
+    "type": "java.lang.String",
+    "description": "A description for '.and().csrf().disable()'"
+  },
+  {
+    "name": ".and().headers().frameOptions().sameOrigin()",
+    "type": "java.lang.String",
+    "description": "A description for '.and().headers().frameOptions().sameOrigin()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll()'"
+  },
+  {
+    "name": ".and().headers().frameOptions().sameOrigin()",
+    "type": "java.lang.String",
+    "description": "A description for '.and().headers().frameOptions().sameOrigin()'"
+  },
+  {
+    "name": ".and().headers().frameOptions().sameOrigin()",
+    "type": "java.lang.String",
+    "description": "A description for '.and().headers().frameOptions().sameOrigin()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll().anyRequest().authenticated()",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll().anyRequest().authenticated()'"
+  },
+  {
+    "name": ".antMatchers(\"/h2-console/**\").permitAll().anyRequest().authenticated().and().csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().headers().frameOptions().sameOrigin().and().addFilterBefore(new",
+    "type": "java.lang.String",
+    "description": "A description for '.antMatchers(\"/h2-console/**\").permitAll().anyRequest().authenticated().and().csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().headers().frameOptions().sameOrigin().and().addFilterBefore(new'"
+  }
+]}
