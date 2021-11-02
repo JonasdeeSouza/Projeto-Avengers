@@ -1,0 +1,22 @@
+<header>
+  <a href="../herois" >Voltar</a>
+</header>
+
+<section class="container">
+  <form class="formulario" (ngSubmit)="ngOnInit()">
+    <h2 class="formulario_titulo">Atualizar Herói</h2>
+    <div class="form-field" >
+      <label class="form-field_label" for="novoNome">Novo nome</label>
+      <input class="form-field_input" id="novoNome" type="text"
+      [(ngModel)]="cadastro.nome" name="novoNome" autocomplete="off" required>
+    </div>
+    <div class="form-field">
+      <label class="form-field_label" for="novoCodinome">Novo codinome</label>
+      <input class="form-field_input" id="novoCodinome" type="text"
+      [(ngModel)]="cadastro.codinome" name="novoCodinome" autocomplete="off" required>
+    </div>
+    <div class="botao-wrapper">
+      <button class="botao" type="submit" (click)="onEdit()">Atualizar</button>
+    </div>
+  </form>
+</section>

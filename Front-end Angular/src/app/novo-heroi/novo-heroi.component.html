@@ -1,0 +1,25 @@
+<header>
+  <a href="../herois" >Voltar</a>
+</header>
+
+
+<section class="container">
+  <form class="formulario" (ngSubmit)="novoHeroiCadastrado()">
+    <h2 class="formulario_titulo">Novo Herói</h2>
+
+    <div class="form-field">
+      <label class="form-field_label" for="nome">Nome</label>
+      <input class="form-field_input" id="nome" type="text" [(ngModel)]="nome" name="nome" autocomplete="off" required>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field_label" for="codinome">Codinome</label>
+      <input class="form-field_input" id="codinome" type="text" [(ngModel)]="codinome" name="codinome" autocomplete="off" required>
+    </div>
+
+    <div class="botao-wrapper">
+      <button class="botao" type="submit">Cadastrar</button>
+    </div>
+  </form>
+
+</section>

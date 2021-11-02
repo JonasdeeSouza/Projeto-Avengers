@@ -1,0 +1,30 @@
+<header>
+  <a href="../home" >Voltar</a>
+  <a href="../novo-filme" routerLinkActive="ativo" >Cadastrar</a>
+</header>
+
+<section>
+  <h2 class="titulo">Filmes</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">id</th>
+      <th class="tabela__cabecalho__conteudo">Nome</th>
+      <th class="tabela__cabecalho__conteudo">ano</th>
+      <th class="tabela__cabecalho__conteudo">Ações</th>
+    </thead>
+    <tbody>
+      <tr class="tabela__linha" *ngFor="let cadastro of cadastros">
+        <td class="tabela__conteudo">{{cadastro.id}}</td>
+        <td class="tabela__conteudo">{{cadastro.nomeFilme}}</td>
+        <td class="tabela__conteudo">{{cadastro.ano}}</td>
+        <span class="float-right">
+          <button routerLink="./../atualiza-filme/{{cadastro.id}}"
+          class="btn btn-outline-warning mb-1 btn-sm">Atualizar
+          </button>
+          <button class="btn btn-outline-warning mb-1 btn-sm"
+          (click)="onRemove(cadastro)">Remover</button>
+        </span>
+      </tr>
+    </tbody>
+  </table>
+</section>

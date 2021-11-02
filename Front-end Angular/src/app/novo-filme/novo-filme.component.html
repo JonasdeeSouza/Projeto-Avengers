@@ -1,0 +1,25 @@
+<header>
+  <a href="../filmes" >Voltar</a>
+</header>
+
+
+<section class="container">
+  <form class="formulario" (ngSubmit)="novoFilmeCadastrado()">
+    <h2 class="formulario_titulo">Novo Filme</h2>
+
+    <div class="form-field">
+      <label class="form-field_label" for="nomeFilme">Nome</label>
+      <input class="form-field_input" id="nomeFilme" type="text" [(ngModel)]="nomeFilme" name="nomeFilme" autocomplete="off" required>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field_label" for="ano">Ano</label>
+      <input class="form-field_input" id="ano" type="text" [(ngModel)]="ano" name="ano" autocomplete="off" required>
+    </div>
+
+    <div class="botao-wrapper">
+      <button class="botao" type="submit">Cadastrar</button>
+    </div>
+  </form>
+
+</section>

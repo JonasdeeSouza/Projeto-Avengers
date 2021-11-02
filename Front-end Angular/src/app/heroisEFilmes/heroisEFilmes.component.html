@@ -1,0 +1,34 @@
+<header>
+  <a href="../home" >Voltar</a>
+  <a href="../novo-heroisEFilmes/" routerLinkActive="ativo" >Cadastrar</a>
+
+  <div class="form-group">
+    <input class="form-group_input" [(ngModel)]="filtro" placeholder="Filtro" >
+  </div>
+</header>
+
+<section>
+  <h2 class="titulo">Heróis e Filmes</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Herói</th>
+      <th class="tabela__cabecalho__conteudo">Filme</th>
+      <th class="tabela__cabecalho__conteudo">Ações</th>
+    </thead>
+    <tbody>
+      <tr class="tabela__linha" *ngFor="let cadastro of cadastros | filtro: filtro">
+        <td class="tabela__conteudo">{{cadastro.nome}}</td>
+        <td class="tabela__conteudo">
+          <div *ngFor="let filme of cadastro.filme">{{filme.nomeFilme}}</div>
+        </td>
+        <td class="tabela__conteudo">
+          <div *ngFor="let filme of cadastro.filme">
+            <span class="float-right">
+              <button class="btn btn-outline-warning mb-1 btn-sm" (click)="onRemove(cadastro, filme)">Remover</button>
+            </span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

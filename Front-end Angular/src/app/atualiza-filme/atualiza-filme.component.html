@@ -1,0 +1,25 @@
+<header>
+  <a href="../filmes" >Voltar</a>
+</header>
+
+<section class="container">
+  <form class="formulario" (ngSubmit)="ngOnInit()">
+    <h2 class="formulario_titulo">Atualizar Filme</h2>
+
+    <div class="form-field" >
+      <label class="form-field_label" for="novoNome">Novo nome</label>
+      <input class="form-field_input" id="novoNome" type="text"
+      [(ngModel)]="cadastro.nomeFilme" name="novoNome" autocomplete="off" required>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field_label" for="novoAno">Novo ano</label>
+      <input class="form-field_input" id="novoAno" type="text"
+      [(ngModel)]="cadastro.ano" name="novoAno" autocomplete="off" required>
+    </div>
+
+    <div class="botao-wrapper">
+      <button class="botao" type="submit" (click)="onEdit()">Atualizar</button>
+    </div>
+  </form>
+</section>
